@@ -1,0 +1,62 @@
+body {
+	height: 100%;
+	background: #000 url('../../assets/images/matrix.jpg');
+	background-repeat: repeat; /* no-repeat */
+  background-size: cover; /* auto contain	*/
+}
+img  {width: 100%; height: auto;}
+.bdr,
+.rad {border-radius: 0.42em;}
+
+.bg0 {background-color: #000;}
+.bge {background-color: #eee;}
+.bgl {background-color: lime;}
+.bgo {background-color: #FBD789;}
+.bgs {background-color: snow;}
+.btn {padding: 0.21em 0.42em;}
+
+.clb {clear: both;}
+.dib {display: inline-block;}
+.fgd {color: #ddd;}
+.fgl {color: lime;}
+
+.fgr {color: #a00;}
+
+.fgy {color: #ff0;}
+.fll {float: left;} .flr {float: right;}
+.fsm {font-size: medium;}
+.fss {font-size: small;} .fsS {font-size: x-small;}
+.fsl {font-size: large;} .fsL {font-size: x-large;}
+.fwb {font-weight: 700;}
+.hhh {display: none;}
+
+.lh2 {line-height: 2;}
+.mga {margin: 0 auto;}
+.mgt {margin-top: 4.2em;}
+
+.p12 {padding: 0.21em;}
+.p42 {padding: 0.42em;}
+
+.tdn {text-decoration: none;}
+.tac {text-align: center;} .tal {text-align: left;}
+.tar {text-align: right;}
+.txU {text-transform: uppercase;}
+
+.w06 {width: 6px;}	
+.w42 {width: 42%;}	
+.w88 {width: 88%; max-width: 971px;}	
+.w99 {width: 100%;}	
+#dollar_sign {width: 6px;}
+
+#menu-top {margin: -0.12em auto ;}
+#menu-top  li 	{display: inline-block; margin: 0.1em  0.42em;}
+#menu-top  li a {color: lime;  text-decoration: none;}
+
+#menu-left 			{width: 7.5em; margin: 0 1em 0 -4em; list-style-type: none;}
+#menu-left li 	{display: inline-block;}
+#menu-left li a {color: lightgreen; text-decoration: none;}
+
+#sidebar {width:8em;}
+#sidebar li {display: inline-block;}
+#img-matrix  {width:100%; height: auto;}
+#rabbit	{vertical-align: middle;}

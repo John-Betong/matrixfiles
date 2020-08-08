@@ -1,0 +1,24 @@
+
+<h1>Alternative Technologies</h1>
+
+<p>This section deals with various technologies that I have come across in my research. One of them, the Angular Momentum Generator, is one of those technologies that, when you see it in action, you smack your head and go, 'Of course!'.</p>
+
+<p>My favourite inventor of all time is Nikolai Tesla. He was a man 100 years or more beyond his time who had an amazing mental visual ability, seeing his inventions work in his mind's eye before ever making them in real life. If the people who helped and supported him would have been more protective and benevolent we would be living in a very different world than the one we live in today - anti-gravity personal conveyances, living out in the countryside with at leat an acre each, energy for the home that tapped into the energy between the molecules of the air, no items that were rented like they are today (phones, cars, cable TV, internet, accomodations, etc) and more.</p>
+
+<p>We would be self sufficient and self-sustaining and all the problems we have in the world today with regards pollution would not be in existence if Tesla had been supported and allowed to bring his inventions to the public for their use and enjoyment. Alas, it was not to be due to one important individual - J.P Morgan. This was the sole man responsible for pulling the rug out from under Tesla's feet when he was on the verge of great things. J. P. Morgan stopped funding Tesla's work after the successful demonstration of the WardenCliffe Tower's wireless transmission of electrical power.</p>
+
+<p>Paul Pantone was another pioneer in the field of extended automotive mileage. His speciality was an invention called GEET, which stands for Global Environmental Energy Technology. What his invention was able to do was convert any internal combustion engine to be able to burn any type of liquid by breaking the liquid down to its component parts, and igniting this new fuel.</p> 
+
+<p>Again, its one of the technologies that one instantly understands when it is explained because the principles are easily observed in nature - specifically thunder storms. What Paul was able to do was to recreate the conditions of a thunder storm and its subsequent electrical discharges inside a copper tube that was placed inside an exhaust pipe. The cold from the incoming fuel and the heat from the outgoing exhaust created a tiny electrical storm at a certain point within the copper tube which had a specially shaped rod inside it. The result was that any liquid was split into its component parts by the action of the electrical storm and the resulting plasma was what went into the engine to be combusted.</p>
+
+<p>I actually met Paul in July of 2003 and spent 10 days with him and his mechanic, Larry, learning about his invention and how it worked. I saw Larry's large 1974 GMC Safari SUV with a 464ci motor work with this GEET system, though when going uphill it lacked power (due to not getting enough oxygen). I was instrumental in advising Larry on the type of carburetor to get for the Geely scooter that Paul had obtained from a local scooter dealer to convert to his GEET System. During my time with Paul and Larry I saw some incredible phenomena with the GEET System which I will go into further in the actual GEET page.</p>
+
+<p>The Joe Cell is the first techonolgy that I discovered and it allowed one to run a car on water. I go into that on the Joe Cell page.</p>
+
+<p>The Hendershot Generator is a technology I came across relatively recently (approx' 2016) and have all the info, which I will have on that page, that will allow anyone else to build one too if they so choose. Parts are readily available from one's local Home Depot!</p>
+
+<p>Viktor Schauberger's work, for me, was wondetful to discover as he was a man who understood how water worked, how vortexes worked, how rivers were formed, how fish maintained their position in a fast flowing river and lots more. He grew up as the son of an Austrian forest warden and during his early years loved watching flowing water for hours. It was through these hours and hours of watching water flow that he began to have questions about what he was seeing and then began to experiment with his thoughts on the subject. A wonderful man to learn about.</p>
+
+<p>John Searl is someone whom I have tried to contact without success, as, with many other people like him, he has made errors in whom he allows to be his 'friends' and whom he has around him. He discovered anti-gravity using magnets configured in a specific way. You can read up on his discovery that goes back to before the war. I am not sure if he is still alive as I discovered him around 2012-2013 and he was about 85 then. His information is also fascinating and I only wished that I could have met him to discuss his work with him.</p>   
+
+<p> <br> </p>
