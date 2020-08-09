@@ -42,6 +42,6 @@ The site has been completely rewritten and most of the images and content have b
 
 If on the off-chance errors are found then post message:
 
-### https://www.codingforum.net/forum/client-side-development/general-web-building/2424853-for-judgedredd-homepage-rewrite
+##### https://www.codingforum.net/forum/client-side-development/general-web-building/2424853-for-judgedredd-homepage-rewrite
 
 
