@@ -9,9 +9,8 @@
 	<h1>Welcome!</h1>
 	<p class="fgr fss">
 	This page was last modified on 31 Jul 2020 - 13:45:56 EST. <em>(Site still under construction.)</em>
-	<p>
-
-	<p>
+	</p><p>
+		
 	Here you will find a culmination of nearly 36 years of research and 
 	Life experiences condensed into one site. It had been running without a 
 	proper index page for more than 10 years! Yet items have been constantly

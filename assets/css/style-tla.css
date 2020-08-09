@@ -1,5 +1,4 @@
 body {
-	height: 100%;
 	background: #000 url('../../assets/images/matrix.jpg');
 	background-repeat: repeat; /* no-repeat */
   background-size: cover; /* auto contain	*/
@@ -12,6 +11,7 @@ img  {width: 100%; height: auto;}
 .bge {background-color: #eee;}
 .bgl {background-color: lime;}
 .bgo {background-color: #FBD789;}
+.bgr {background-color: RED;}
 .bgs {background-color: snow;}
 .btn {padding: 0.21em 0.42em;}
 
@@ -23,7 +23,7 @@ img  {width: 100%; height: auto;}
 .fgr {color: #a00;}
 
 .fgy {color: #ff0;}
-.fll {float: left;} .flr {float: right;}
+.fll {float: left; } .flr {float: right;}
 .fsm {font-size: medium;}
 .fss {font-size: small;} .fsS {font-size: x-small;}
 .fsl {font-size: large;} .fsL {font-size: x-large;}
@@ -36,6 +36,9 @@ img  {width: 100%; height: auto;}
 
 .p12 {padding: 0.21em;}
 .p42 {padding: 0.42em;}
+.poa {position: absolute; }
+.por {position: relative; }
+
 
 .tdn {text-decoration: none;}
 .tac {text-align: center;} .tal {text-align: left;}
@@ -45,18 +48,29 @@ img  {width: 100%; height: auto;}
 .w06 {width: 6px;}	
 .w42 {width: 42%;}	
 .w88 {width: 88%; max-width: 971px;}	
-.w99 {width: 100%;}	
-#dollar_sign {width: 6px;}
+.w99 {width: 99%;}	
 
-#menu-top {margin: -0.12em auto ;}
-#menu-top  li 	{display: inline-block; margin: 0.1em  0.42em;}
-#menu-top  li a {color: lime;  text-decoration: none;}
+#menu-top {
+	margin: -0.12em auto 0 ; 
+	line-height: 0.2; 
+	text-decoration: none;}
+#menu-top li 	{
+	display: inline-block; 
+	margin: 0.1em  0.21em 0;  
+	text-transform: capitalize;}
+#menu-top li a:link  		{color: yellow; }
+#menu-top li a:visited 	{color: aqua;}
+#menu-top li a:hover 		{background-color: #aaa; color: #fff;}
+#menu-top li a:active 	{color: snow;  }
 
-#menu-left 			{width: 7.5em; margin: 0 1em 0 -4em; list-style-type: none;}
-#menu-left li 	{display: inline-block;}
-#menu-left li a {color: lightgreen; text-decoration: none;}
 
-#sidebar {width:8em;}
-#sidebar li {display: inline-block;}
-#img-matrix  {width:100%; height: auto;}
-#rabbit	{vertical-align: middle;}
+#menu-left 			{width: 7.5em; margin: 0 ; padding: 0 0.42em 1em 0.42em; display: inline-block; list-style-type: none;}
+#menu-left li 	{display: inline-block; display: block; }
+#menu-left li a {color: lightgreen; text-decoration: none; text-transform: capitalize;}
+
+
+#sidebar 			{width:8em;}
+#sidebar li 	{display: inline-block;}
+
+#rabbit				{z-index:21; vertical-align: middle; width: 22px; outline: solid 1px aqua;}
+#dollar_sign 	{z-index:21;  width: 10px;}

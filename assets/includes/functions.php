@@ -5,13 +5,16 @@
 	$PAGE = str_replace('.php', '', $PAGE);
 	$title = substr($PAGE, 1);
 
-	if( strlen($PAGE) < 2 ) :
+# DEFAULST
+	if( strlen($PAGE) > 1 ) :
+		$content 	= 'sitepages' . $PAGE 	.'.php'; 
+		$conSub 	= 'sitepages' . $PAGE .'-sub.php'; 
+		$title 		= substr($PAGE, 1);
+	else:	
 		$PAGE 		= '/home';
 		$content 	= 'sitepages/home.php'; 
 		$conSub 	= 'sitepages/home-sub.php'; 
-	else:	
-		$content 	= 'sitepages/' . $PAGE 	.'.php'; 
-		$conSub 	= 'sitepages/' . $title .'-sub.php'; 
+		$title 		= 'home';
 	endif;	
 
 # PREVENT WARNING IF FILE DOES NOT EXIST

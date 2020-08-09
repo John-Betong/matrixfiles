@@ -1,5 +1,5 @@
 
-<h1>Computers</h1>
+<h1> Computers </h1>
 
 <p>
 I got involved with computers sometime in 1987 when I used a friends Commodore 64. I hated it.
@@ -52,3 +52,4 @@ I have also made public a formerly hidden link to a whole heap of programs that 
 
 I hope that you find this section of benefit.
 </p>
+
