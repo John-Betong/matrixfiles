@@ -68,9 +68,30 @@ img  {width: 100%; height: auto;}
 #menu-left li 	{display: inline-block; display: block; }
 #menu-left li a {color: lightgreen; text-decoration: none; text-transform: capitalize;}
 
-
 #sidebar 			{width:8em;}
 #sidebar li 	{display: inline-block;}
 
-#rabbit				{z-index:21; vertical-align: middle; width: 22px; outline: solid 1px aqua;}
+#rabbit				{z-index:21; vertical-align: middle; width: 22px;}
 #dollar_sign 	{z-index:21;  width: 10px;}
+
+	#middle {
+		width: 88%; max-width: 971px; 
+		margin: 4em auto;
+		background-color: #000; color: #fff;
+	}
+	#content {
+		position: relative;
+		width: 88%; max-width: 971px; 
+		margin: 0em auto;
+		background-color: #FBD789; color: #000;
+	}
+
+	#conMenu {
+		position: absolute; left: -8em; top:0; 
+		width: 8em; 
+		background-color: #000;	color: lime;	
+	}
+	#conSub {
+		margin: 2em 0.8em 0;
+		background-color:  #FBD789;	color: #000;	
+	}
