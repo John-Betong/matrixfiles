@@ -4,17 +4,15 @@
 $leftUrl = 'http://matrixfiles.com/sitepages/downtherabbithole.php';
 $leftImg	= '<img 
 							id="rabbit" 
-							src="assets/images/wr2.png" 
+							src="images/wr2.png" 
 							alt="Down the Rabbit Hole we go!"
 						>';
 
 $rightUrl = 'http://matrixfiles.com/sitepages/donations.php';
 $rightImg = '<img 
 							id="dollar_sign" 
-							class="flr"
-							src="assets/images/dollar-sign2.png" 
-							width="6"
-							alt="The almighty Dollar Sign!" 
+							src="images/dollar-sign2.png" 
+							alt="The Almighty Dollar Sign!" 
 							>';	
 
 $aLinks = [

@@ -1,0 +1,296 @@
+/*============================================================================
+  GRC multi-level script-free pure-CSS menuing system stylesheet.
+   This code is hereby placed into the public domain by its author
+   Steve Gibson. It may be freely used for any purpose whatsoever.
+  Computed Geometries:  with a default 12px font, 1.0em == 12px and
+  1px == 0.08333em.
+  Thus, our 98px wide Freeware & Research buttons are 8.166666em wide.
+                      PUBLIC DOMAIN CONTRIBUTION NOTICE              
+   This work has been explicitly placed into the Public Domain for the
+  benefit of anyone who may find it useful for any purpose whatsoever.
+=============================================================================*/
+
+
+/*================= STYLES FOR THE GRC MASTHEAD & CONTROLS ==================*/
+table{
+    margin: 0 auto;
+    width:70%;
+    text-align:center;
+   /* border:1px solid black; */   
+}
+
+th {
+    height:auto;
+}
+
+td{
+    width:40%;
+    vertical-align:middle;
+    padding:10px;
+   /* border:1px solid black; */
+}
+
+/* coin pages images */
+.coin-images {
+    display:block;
+    margin: auto;
+    width:80%;
+}
+/*END coin  pages images*/
+
+/*body, img, button, iframe, .coin-ul ul, .coin-li, ul, li,*/
+/*body, img, button, iframe, ul, li,hr { 
+    margin:0px; 
+    padding:0;
+    border:0;
+}
+*/
+
+.coin-pages {
+    width:103.5%;
+    background-color:white;
+    margin:0px 0px 0px -16px;  /* was 0px -9px 0px -16px;*/
+    padding:10px; 
+}
+.coin-pages p {
+    text-align:justify;
+    width:98%;
+    background-color:white;
+    padding:5px 0px 5px 10px;
+}
+
+.menuminwidth0 {             /* for all browsers (non-IE) that obey min-width */
+  position:relative;
+  border:0;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:20px;         /* originally 36px masthead height + 18px button height + 1px lower border*/
+  min-width:560px;      /* was 560px */
+}
+/* suppress our whole menu when not an interactive mode (when printing, etc.) */
+@media print { 
+    .menuminwidth0 { 
+    display:none; 
+    } 
+}/* , projection */
+    
+* html .menuminwidth1 {                    /* this allows IE5/6 to simulate min-width capability */
+  position:relative;                     /* we can simulate a minimum width by creating a large */
+  float:left;                            /* border in this first div, then placing our content */
+  height: 1px;                           /* into a second nested div (see 2nd nested div next */
+  border-left:560px solid #fff;          /* was 560px - CSS box-model borders are a fixed size */
+}
+* html .menuminwidth2 {    /* used to simulate min-width capability for IE5/6 */
+  position:relative;
+  margin-left:-560px;    /* Was -560px */
+  height: 1px;
+}
+
+ /*========================= TOP OF THE MENU CASCADE =========================*/
+ a {
+    text-decoration:underline dotted;
+    color: red;
+ }
+ 
+ .coin-menu a{
+    text-decoration:none;
+    color:white;    
+ }
+.coin-menu {
+  position:relative;                        /* establish a menu-relative positioning context */
+  float:left;                               /* play nicely with others */
+  margin:0px 10px 0px -16px;                /* was 0 - color band of the menu*/       
+  padding:0px 0px 0px 14px;                 /* was 0px - padding around the entire menu */
+  border:0;
+  height:23px;                               /* the menu's overall height */
+  width:103.5%;                              /* we always want our menu to fill the available space */
+  background:#000000; /* #f3f3f3;, original yellow - #fde90c*/
+    color: white;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size:0.9em;                /* this (and also below) sets the menu's font size */
+  border-bottom:0px solid black;  /* give us a black horizontal line underneath the full width of menu */
+  z-index:1;                /* this number makes the menu appear over or under another area where a menu is inactive */
+                        /* If this number is higher than the z number of the other menu then it will appear over the menu .*/
+                        /* If this number is lower than the other z number then this menu will appear 'under' the link */
+                        /* for the other menu, which means the other menu link will show through the drop down box. */
+}                       /* The other z number is 0. A negative z number seems to make the menu link inactive. */ 
+.coin-menu img {
+  vertical-align: top;            /* prevent images from being pushed down by text */
+}
+.coin-menu ul {
+  margin:0px; /* was 0 */        /* we don't want to view the list as a list */
+  list-style-type:none;          /* globally set the menu's item spacing. note */
+    /* The line height below moves the menu color strip in its entirety up or down depending on the line height value */
+  line-height:1.5em;             /* was 1.5em - this must be 1.0 or 1.5 or 2.0 for Mozilla */             
+}                                  
+.coin-menu li {
+  float:left;                 /* this creates the side-by-side array of top-level buttons */
+  position:relative;          /* create local positioning contexts for each button */
+  margin:0;                   /* Affects the individual width boxes */
+    padding:2px 5px;            /* Spacing around menu items */  
+}
+.coin-menu ul li table {
+  margin:-1px 0;                 /* IE5 needs -1px top and bottom table margins */
+  margin:0;                      /* re-zero the table margins for everyone but IE5 */
+  border-collapse:collapse;      /* IE5 needs this for the sub-menus to work */
+  font-size:0.7em;               /* this sets the base font size for our entire menu */
+    color:black;
+}
+.drop {
+  display:block;
+  padding:2px 0.33em;    /* this sets the left/right margins for our menu item */
+  margin:0px;
+  text-align:right;      /* this right alignment goes with the float:left below */
+  cursor:pointer;        /* IE tries to switch back to an I-beam, don't let it */
+  /* cursor:hand; */     /* IE5 only knows about "hand", so set it both ways */
+}.drop span {            /* this simultaneously left and right aligns the text and */
+  float:left;            /* the >> in the drop-down menus which link to sub-menus */
+}
+
+/*======================== TOP LEVEL MENU DEFINITIONS ========================*/
+.coin-menu ul li ul {
+  display:none;                  /* initially hide the entire list hierarchy */
+  padding:1px;                   /* this is our box border width */
+}
+.coin-menu ul li a,
+.coin-menu ul li a:visited {               /* unselected top-level menu items */
+  display:block;
+  float:left;
+  text-decoration:none;
+  height:16px;
+}
+.coin-menu ul li:hover a,
+.coin-menu ul li a:hover {                 /* selected top-level menu items */
+  border-top:1px solid #000;             /* these 2 lines create the push-in illusion */
+  height:16px;
+}
+/*======================== 2ND LEVEL MENU DEFINITIONS ========================*/
+.coin-menu ul li:hover ul,
+.coin-menu ul li a:hover ul {      /* menu: 2nd level drop-down box */
+  display:block;
+  position:absolute;
+  margin:0px;
+  top:18px;                      /* doesn't do anything without the images being in the menu, places us just up underneath the top-level images */
+  left:-1px;                     /* WAS 237px - left-align our drop-down to the previous button border - originally -1 */
+  height:auto;                   /* the drop-down height will be determined by line count */
+  width:18em;                    /* width of the menu box - make the same as the field in BOLD below */
+  color:black;                   /* this sets the unselected-text color */
+  background:white;              /* this sets our menu's effective "border" color */
+}
+
+.coin-menu ul li:hover ul li a,
+.coin-menu ul li a:hover ul li a {         /* menu: 2nd level unselected items */
+  border:0px;                            /* was 0 */
+  margin:0px 0px 0px -3px;               /* Was 0 0 0 -3 */
+  padding:0px;
+  height:auto;
+  color:#000;                            /* this sets the unselected drop-down text color */
+  background:#f7f7f7;                    /* was #f7f7f7 - this sets the drop-down menu background color */
+  width:18em;                            /* SET THIS ONE THE SAME AS ABOVE */
+}
+
+.coin-menu ul li:hover ul li:hover a,
+.coin-menu ul li a:hover ul li a:hover {   /* menu: 2nd level selected item */
+  color:black;
+  background:#d8d8d8;                      /* was #d8d8d8  */
+}
+.coin-menu ul li:hover ul.menu1,
+.coin-menu ul li a:hover ul.menu1 { /* menu 1: (original text - our first dropdown should not be skewed) */ 
+  display:block;
+  position:absolute;
+  margin:2px 0px -10px 0px;       /* Moves the drop down menu box down */
+  top:18px;                       /* place us just up underneath the top-level images */
+  left:-1px;                      /* left-align our drop-down to the previous button border - originally -1 */
+  height:auto;                    /* the drop-down height will be determined by line count */
+  width:18em;                     /* 18.5 - width of the menu box container - make the same as the field in BOLD below */
+  color:black;                    /* this sets the unselected-text color */
+  background:black;               /* this sets our menu's effective "border" color */
+}
+
+.coin-menu ul li:hover ul.menu1 li a,
+.coin-menu ul li a:hover ul.menu1 li a {    /* menu 1: 2nd level unselected items */
+  border:0px;                             /* Was 0 */
+    margin:-0.15em 0.9em 0em -0.4em;    /* Moves container around */
+  margin:-2px 1px -1px -5px;              /* Space between the fill in background and the underlying background */
+  padding:0px;
+  height:auto;
+  color:#000;                    /* this sets the unselected drop-down text color */
+  background:#FFFAC5;            /* this sets the drop-down menu background color */
+  width:18em;                    /* SET THIS ONE THE SAME AS ABOVE */
+}
+
+.coin-menu ul li:hover ul.menu1 li:hover a,
+.coin-menu ul li a:hover ul.menu1 li a:hover { /* menu 1: 2nd level selected item */
+  color:black;
+  background:#FFFEF6;
+}
+
+/* Chapter 6 menu item to change the size of the drop down box - menu3 */
+.coin-menu ul li:hover ul.menu3,
+.coin-menu ul li a:hover ul.menu3 { /* menu 3: (original text - our first dropdown should not be skewed) */ 
+  display:block;
+  position:absolute;
+  margin:1px 0px -10px 0px;       /* Moves the drop down menu box down */
+  top:18px;                       /* place us just up underneath the top-level images */
+  left:-44px;                      /* left-align our drop-down to the previous button border - originally -1 */
+  height:auto;                    /* the drop-down height will be determined by line count */
+  width:14em;                     /* 18.5 - width of the menu box container - make the same as the field in BOLD below */
+  color:black;                    /* this sets the unselected-text color */
+  background:black;               /* this sets our menu's effective "border" color */
+}
+
+.coin-menu ul li:hover ul.menu3 li a,
+.coin-menu ul li a:hover ul.menu3 li a {    /* menu 3: 2nd level unselected items */
+  border:0px;                             /* Was 0 */
+    margin:-0.15em 0.9em -0.05em -0.4em;    /* Moves container around */
+  margin:-2px 1px -1px -5px;              /* Space between the fill in background and the underlying background */
+  padding:0px;
+  height:auto;
+  color:#000;                    /* this sets the unselected drop-down text color */
+  background:#FFFAC5;            /* this sets the drop-down menu background color */
+  width:14em;                    /* SET THIS ONE THE SAME AS ABOVE */
+}
+
+.coin-menu ul li:hover ul.menu3 li:hover a,
+.coin-menu ul li a:hover ul.menu3 li a:hover { /* menu 3: 2nd level selected item */
+  color:black;
+  background:#FFFEF6;
+}
+
+/* Appendix menu item to change the size of the drop down box - menu4 */
+.coin-menu ul li:hover ul.menu4,
+.coin-menu ul li a:hover ul.menu4 { /* menu 4: (original text - our first dropdown should not be skewed) */ 
+  display:block;
+  position:absolute;
+  margin:1px 0px -10px 0px;       /* Moves the drop down menu box down */
+  top:18px;                       /* place us just up underneath the top-level images */
+  left:-44px;                      /* left-align our drop-down to the previous button border - originally -1 */
+  height:auto;                    /* the drop-down height will be determined by line count */
+  width:10em;                     /* 18.5 - width of the menu box container - make the same as the field in BOLD below */
+  color:black;                    /* this sets the unselected-text color */
+  background:black;               /* this sets our menu's effective "border" color */
+}
+
+.coin-menu ul li:hover ul.menu4 li a,
+.coin-menu ul li a:hover ul.menu4 li a {    /* menu 4: 2nd level unselected items */
+  border:0px;                             /* Was 0 */
+    margin:-0.15em 0.9em -0.05em -0.4em;    /* Moves container around */
+  margin:-2px 1px -1px -5px;              /* Space between the fill in background and the underlying background */
+  padding:0px;
+  height:auto;
+  color:#000;                    /* this sets the unselected drop-down text color */
+  background:#FFFAC5;            /* this sets the drop-down menu background color */
+  width:10em;                    /* SET THIS ONE THE SAME AS ABOVE */
+}
+
+.coin-menu ul li:hover ul.menu4 li:hover a,
+.coin-menu ul li a:hover ul.menu4 li a:hover { /* menu 4: 2nd level selected item */
+  color:black;
+  background:#FFFEF6;
+}
+
+
+#text {           /* the Mac's standard Safari browser will not see this code */
+  height:1.215em; /* ...  but every other browser will and should */
+} /* Safari barfs on the illegal pound sign (#) after the rule's property val */

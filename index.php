@@ -2,81 +2,69 @@
 error_reporting(-1);
 ini_set('display_errors', 'true');
 	
-require 'assets/includes/functions.php';
+# GET $PAGE  	
+		require 'includes/functions.php';
+		$PAGE =  getPage();
 
-?><!DOCTYPE html><html lang="en">
-<head lang="en">
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+require 'includes/hdr.php';
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-	  media="screen">
-	<link rel="stylesheet" href="assets/css/style-001.css" media="screen">
-<!--
--->
-<link rel="stylesheet" href="assets/css/style-tla.css" media="screen">
-<link rel="shortcut icon" href="//matrixfiles.com/favicon.ico">
-<title> Matrix Files - <?= $title ?> </title>
-
-</head>
+?>
 
 <body>
-	<div class="flr bgl rad p42">
-		<a href="https://github.com/John-Betong/matrixfiles.git">
-			<span> GitHub Source </span>
-		</a>
-	</div>
 
-	<div class="fll">	
-		<?php require 'assets/includes/sidebar.php'; ?>
-	</div>	
+<!-- NICKED @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<DIV class="modalFix">
 
-	<div id="middle">
-		<img src="assets/images/matrix2.jpg" 
-			width="971" height="139" alt="#">
+	<DIV id="top">
+		<header>
+				<?php require 'includes/menu-top.php'; ?>
+		</header>
 
-		<ul id="menu-top" class="XXXbg0 fss tac">
-			<?php
-				require 'sitepages/_MENUTOP.php'; 
-				echo menutop($aLinks, $PAGE);
-			?>		
-		</ul>
-		
-
-<!-- ####################################################33 -->
-		<div id="content">
-			<?php if(file_exists($conSub) ) : ?>
+		<main>
+			<?php if(file_exists('sitepages' . $PAGE .'-sub.php') ) : ?>
 					<div id="conMenu">
 						<ul id="menu-left" class="fll bg0 lh2 fss">
 							<?php 
-								require($conSub);
+								require('sitepages' . $PAGE .'-sub.php');
 								echo menuLeft($aSubs);
 							?>
 						</ul>	
 					</div>
 
-					<!-- div class="fll dib XXXw99 XXXbgs" style=" " -->
 					<div id="conSub">
-							<?php require $content ?>
+							<?php require 'sitepages/' . $PAGE 	.'.php' ?>
 					</div>
 
-				<?php else: ?>	
+			<?php else: ?>	
 					<div class="clb bgo ">
-						<?php # echo file_get_contents($content); ?>
-						<?php # $content ?>
-						<?php require $content ?>
+						<?php 
+							require 'sitepages/' . $PAGE 	.'.php';
+						?>
 					</div>	
-				<?php endif; ?>	
-			</div><!-- id=content -->	
-<!-- ####################################################33 -->
+			<?php endif; ?>	
+		</main>
 
-		<div class="XXXclb w88 mga fgd fsS tac">
-			<?php require 'assets/includes/waiver.php'; ?>
-		</div>
-	
-	</div><!-- class="clb w88 mga bgs" -->
+		<footer>
+			<?php require 'includes/footer.php'; ?>
+		</footer>
+
+	</DIV><!-- #top -->
+
+</DIV><!-- .modalFix -->
+
+<!--
+  MODIFIED action="#" 
+-->
+<form action="contact.php?fred" class="modal" id="contact">
+		<?php require 'includes/hamburger.php'; ?>
+</form>
+
+<script src="scripts/library.js"></script>
+
+<!-- NICKED @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
-	<?php require 'assets/includes/footer.php'; ?>
+		<?php require 'includes/footer-jb.php'; ?>
 
 </body>
 </html>

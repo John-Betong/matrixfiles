@@ -1,42 +1,34 @@
 <?php declare(strict_types=1);
 
-?>
+# HAVE CONTACT DETAILS BEEN POSTED
+		if( $_GET ) :
+				$tmp = '
+							This is the data that has just been submitted 
+							<br> 
+									and 
+							<br> 
+									wants sanitizing, etc
+				';
+				echo "<h2> $tmp </h2>";
+			
+				$ok = validate_get_parameters($_GET);
+				if( $ok ) :
+						require 'includes/form-success.php';
+				else:		
+						require 'includes/form-problems.php';
+				endif;
+	else:
+			require 'includes/form-contact.php';
+	endif;
 
-<form action="#" id="contact">
-	
-	<div class="tac p42">
 
-		<fieldset class="tal dib bge">
-			<h1>Contact Us</h1>
-			<label>
-				Your Name:<br>
-				<input type="text" name="name" required>
-				<br>
-			</label><label>
+//=====================================================
+function validate_get_parameters($aVals) : bool 
+{
+		echo '<pre>'; print_r($_GET); echo '</pre>';
+		echo '<h3>Dated: ' .date('l, dS F Y - H:i:s') .'</h3>';
+		
+		return (bool) mt_rand(0,2);
+}
 
-				E-Mail Address:<br>
-				<input type="email" name="email" required>
-				<br>
-			</label><label>
 
-				Subject:<br>
-				<input type="text" name="subject" required>
-				<br>
-			</label><label>
-
-				Message:<br>
-				<textarea name="message" rows="6" required></textarea>
-				<br>
-			</label>
-
-			<p class="submitsAndHiddens">
-				<button class="XXXflr"> Send Message </button>
-				<input type="hidden" name="contact_hash" value="', (
-					session_hash('contact_hash')
-				), '">
-			</p><!-- .submitsAndHiddens -->
-
-		</fieldset>
-	</div>
-
-</form><!-- #contact.modal -->

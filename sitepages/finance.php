@@ -1,6 +1,35 @@
-<h1>Finance</h1>
-
-<p>Having spent time working in the city of London (EC4 to be exact) I experienced first hand how the people in this sector of society work and the morals that they tend to have. I was also involved in trying to refinance a hotel in Portugal at the time I was working there, actually flying to Portugal and getting a video made of the hotel and going over its books for potential investors. The attempt at refinancing the hotel didn't work out though the experience opened my eyes to the mortgage/refinance industry.</p>
+                <div class="wrapper">
+                <section class="content"><!-- Content -->
+                  <div class="columns">
+                        <aside class="sidebar-first"><div id="left-menu-1st-line">
+Links with * work
+</div>
+<div class="vertical-menu">
+<a href="finance.php">*PAGE INDEX</a>
+<a href="1892.php">*1892</a>
+<a href="fednotes.php">*2009 FED $$?</a>
+<a href="betting.php">Betting in the UK</a>
+<a href="coin.php" target="_blank">*Coin's Financial Course</a>       
+<a href="digital-currencies.php">Digital Cash</a>
+<a href="dwn.php">*:David-Wynn: Miller, mortgages</a>
+<a href="dow-scalper.php">*Dow Scalper</a>
+<a href="economic-slavery.php">Economic Slavery</a>
+<a href="fed.php">FED History</a>
+<a href="https://divinecosmos.com/start-here/davids-blog/1023-financial-tyranny?showall=&amp;limitstart=" target="_blank">*Financial Tyranny</a>
+<a href="gold.php">Gold</a>
+<a href="options.php">Options Trading</a>
+<a href="quiet.php">*Silent Weapons<br>for Quiet Wars</a>
+<a href="taxes.php">*Taxes</a>
+<a href="stock-market.php">The Stock Market</a>
+<a href="wd-gann.php">W. D. Gann</a>
+<a href="whats-money.php">What is Money?</a>
+<a href="bc.php">*Your BC (birth certificate)</a>
+</div>                        </aside> 
+                    <div class="main">            
+        <h2>
+       Finance 
+        </h2>                              
+                    <p>Having spent time working in the city of London (EC4 to be exact) I experienced first hand how the people in this sector of society work and the morals that they tend to have. I was also involved in trying to refinance a hotel in Portugal at the time I was working there, actually flying to Portugal and getting a video made of the hotel and going over its books for potential investors. The attempt at refinancing the hotel didn't work out though the experience opened my eyes to the mortgage/refinance industry.</p>
 
 <p>I was also involved in banking at the highest levels and saw the complete and utter corruption and greed involved there. Some very interesting truths were made known to me which altered my perception of what banking was, and is, all about. During this time I went to Luxembourg and saw how a certain segment of the industry is full of hopeful, deluded, individuals hoping to 'score' a multi-billion dollar deal so that they could collect their huge commissions. The amount of greed and corruption at this upper level of banking is mind-boggling and is not something that is known about to the regular individual on the street.</p>
 
@@ -8,22 +37,20 @@
 
 <p>After approxiamtely 10 minutes of discussion Mr. Walen told me that he wanted me to represent him in Europe. I asked him why as we hardly knew each other. He then said that he was nearly 80 years old and that he had been in banking a long time and knew when someone was being honest with him and when someone was bullshitting him. He told me he was very surprised at my straightforward honesty which he very rarely experienced in the banking business. He told me that he needed someone like me to work for him. He then asked me to find out if the new financial regulations that had come into force in the UK would allow me to do so.</p>
 
-<p>At the time enquiries that I made, made me believe that I could not do anything with Mr. Walen because the way I had understood the new regulations meant that I would have to become certified in certain areas. It was only a few years later when I discovered that these requirements would not have applied to the type of work I would have done with Mr. Walen. So that was an opportunity that I lost due to my lack of understanding in this area (regulations).</p>
+<p>At the time the enquiries that I made, made me believe that I could not do anything with Mr. Walen because the way I had understood the new regulations meant that I would have to become certified in certain areas. It was only a few years later that I discovered that these requirements would not have applied to the type of work I would have done with Mr. Walen. So that was an opportunity that I lost due to my lack of understanding in this area (regulations).</p>
 
 <p>Years later when I got to know Christopher Story I wrote him a letter about the financial system and put forward an idea which I will share on this page. Mr. Story was assassinated via poisoning before any work could be done with my idea.</p>
 
 <p>The following is what I wrote to Mr. Story when pondering how to destroy the power of the Rothchilds and other nasty people in the banking field.</p>
 
-<p class="tac">_________</p>
+<p style="text-align:center;">_________</p>
 
 
-<p class="tar"> Date: 23rd October 2008 </p>
+<p>Date: 23rd October 2008</p>
 
-<q class="tac">
-	"Men occasionally stumble on the truth, but most of them pick themselves up and hurry off as if nothing had happened." - Winston Churchill
-</q>
+<p style="text-align:center;">"Men occasionally stumble on the truth, but most of them pick themselves up and hurry off as if nothing had happened." - Winston Churchill</p>
 
-<p> Dear Mr. Story, </p>
+<p>Dear Mr. Story,</p>
 
 <p>I have written to you briefly in the past and thought that you would be the best person to give this data to. Your thoughts would be appreciated although I am not expecting any, as the data presented may be too far out into left field to merit a response.</p>
 
@@ -76,11 +103,11 @@ approx 155,737,705 working people.</p>
 
 <p>For how much the average wage is we go here:</p>
 
-<p><a href="http://www.census.gov/Press-Release/www/releases/archives/income_wealth/005647.html">http://www.census.gov/Press-Release/www/releases/archives/income_wealth/005647.html</a></p>
+<p><a href="http://www.census.gov/Press-Release/www/releases/archives/income_wealth/005647.html" target="_blank">http://www.census.gov/Press-Release/www/releases/archives/income_wealth/005647.html</a></p>
 
 <p>This gives us the amount of $44,389, which seems a bit low, but so be it.</p>
 
-<p>Now what is the wealth created by these individuals?</p>
+<p>Now, what is the wealth created by these individuals?</p>
 
 <p>155,737,705 x 44,389 = 6,913,040,987,245 = $6.9 Trillion PER YEAR!</p>
 
@@ -158,6 +185,11 @@ approx 155,737,705 working people.</p>
 <p>Your views are actually appreciated.</p>
 
 <p>Yours Sincerely<br>
-Christopher XXXXXXXXX</p>
+XXXXXXXXX</p>
 
-<p class="tac"> _________ </p>
+<p style="text-align:center;">_________</p>
+
+         </div>
+       </div>    
+    </section><!-- End Content -->
+</div>      

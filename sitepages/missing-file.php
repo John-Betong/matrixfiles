@@ -2,17 +2,20 @@
 
 ?>
 
-  <h1 class="fgr tac">
-      <?php echo isset($message) ? $message : 'It&#39;s just not your lucky day :('; ?>
-  </h1> 
+  <p> &nbsp; <br> </p>
+  <h2>
+  <img class="rad" src="images/404-004.jpg" alt="#">
+   </h2> 
 
-  <div class="w88 mga">
-    <img class="rad" src="assets/images/404-004.jpg" alt="#">
-
-  <h2 class="">
-  	Some Zen computer error messages which may apply to your recent mis-fortune
-  </h2> 
+  <h3> 
+    It&#39;s just not your lucky day :(
+   </h3> 
+  <p> &nbsp; </p>
   
+  <h3> 
+    Some Zen computer error messages which may apply to your recent mis-fortune
+  </h3>
+
   <pre>
       1. The Web site you seek cannot be located, but countless more exist. 
 
@@ -41,10 +44,10 @@
       13. Serious error. All shortcuts have disappeared. 
 
       14. Screen. Mind. Both are blank.
-
-
-			<a class="btn fsl fwb XXXbgo fg0 tdn" href='home'>
-				<strong> Please Try again... </strong>
-			</a>
   </pre>
-</div>
+
+  <h3>
+      <a href='home'>
+        <strong> Please Try again... </strong>
+      </a>
+  </h3>

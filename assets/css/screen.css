@@ -1,0 +1,676 @@
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,dl,dt,dd,
+table,tr,td,th,p,img {
+  margin:0;
+  padding:0;
+}
+
+img, fieldset {
+  border:none;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+hr {
+  display:none;
+  /*
+    HR in my code are for semantic breaks in topic/section, NOT
+    style/presenation, so hide them from screen.css users
+  */
+}
+
+@media (max-width:480px) {
+  /* Fix for pre "viewport <meta>" mobile browsers */
+  * {
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+  }
+}
+
+html, body {
+  height:100%;
+}
+
+button,
+label {
+  cursor:pointer;
+}
+
+body, button, input, table, textarea, select {
+  font:normal 0.994em/1.3 arial,helvetica,sans-serif; /* was 1em/1.5 */
+}
+
+body {
+  background:#000 url(../../images/bodyBackground.png) repeat; /* was top center repeat; */
+}
+
+/* Image formatting for the top of and in the main content area */
+.leadingPlate,
+.trailingPlate {
+  width:100%;
+  max-width:34.5%;
+}
+
+.leadingPlate {
+  float:left;
+  padding:0 0.6em 0.6em 0; /* was 0 1.5em 1.5em 0 */
+}
+
+.trailingPlate {
+  float:right;
+  padding:0 0 0.6em 0.6em; /* was 0 0 1.5em 1.5em; */
+}
+
+.plate {
+    display:block;
+  max-width:100%;
+  margin:0 auto 1em; /* had 0 at the beginning and 1.5em at the end */
+}
+/* END image formatting */
+
+/* lingo.php images */
+#image-pop {
+    width: 12.5%;
+}
+#image-pop:hover {
+    width: 30%;
+}
+
+#image-pop2 {
+    width: 25%;
+}
+#image-pop2:hover {
+    width: 60%;
+}
+#image-pop3 {
+    width: 25%;
+}
+#image-pop3:hover {
+    width: 95%;
+}
+#image-pop4 {
+    width: 15%;
+}
+#image-pop4:hover {
+    width: 50%;
+}
+#image-pop5 {
+    width: 12.5%;
+}
+#image-pop5:hover {
+    width: 70%;
+}
+/* End lingo.php images */
+
+/* Birth certificate image pop */
+#image-pop6 {
+    width: 100%;
+}
+#image-pop6:hover {
+    width: 170%;
+}
+
+#top {
+    max-width:60.98em; /* was 64em */
+  margin:0.33em auto; /* was 0em - 0.33em is the space between the top of the viewport & the header, auto is centering of header image */
+    padding:0 0em; /* 0 1em - padding around the bottom of header image removed */
+    border:1px solid #0C810F; 
+
+}
+
+h1,
+#mainMenu,
+#top > footer {
+  background:#000;
+  color:#FFF;
+}
+
+#mainMenu { 
+    border-top:1px solid #0C810F;
+}
+
+h1 {
+  position:relative;
+  padding:0.5em 0.5em 0.42em 0.5em; /* 0.5em; */
+  font-size:3em;
+  line-height:1em;
+  text-transform:uppercase;
+  color:#FB0;
+  border-width:1px 1px 0px 1px;
+}
+
+h1 small {
+  display:block;
+  font-size:0.5em;
+  padding-left:6em;
+}
+
+h1:before {
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:url(../../images/h1Logo.jpg) 0 0 no-repeat;
+  background-size:contain;
+}
+
+#mainMenu ul {
+  list-style:none;
+  display:flex;
+}
+
+#mainMenu li {
+  flex:1 0 auto;
+}
+
+/* Positioning of the menu items in relation to each other*/
+#mainMenu a {
+  position:relative;
+  display:block;
+  padding:0.33em 0em 0.05em 0em; /* originally 0.5em 0.25em - new 0.3em 0.25em 0em 0.25em*/
+  line-height: 1.1em ; /* New - added */
+  font-family:courier,monospace;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:1em; /* 0.875em */
+  color:#0F0;
+  transition:color 0.3s, background 0.3s, text-shadow 0.3s;
+  text-transform: capitalize;
+}
+
+#mainMenu a:focus,
+#mainMenu a:hover {
+  color:#FFF;
+  text-shadow:0 0 0.25em #FFF;
+  text-transform: uppercase;
+  background-color: #0f0; color: #000;
+}
+
+/* Positioning of the green dropdown box when mouse hovers over these elements */
+#mainMenu .rabbit span, 
+#mainMenu .donations span { /* Without this line the entire menu messes up */
+  position:absolute;
+  top:1.15em; /* was 2.5em - the bigger value causes a space between the menu bar and the box */
+  width:10em; /* was 10em */
+  padding: 0.3em; /* 0.5em - space around the item inside the green box */
+  background:#060;
+  color:#FFF;
+  text-shadow:none;
+  opacity:0;
+  box-shadow:0 0.25em 0.25em rgba(0,0,0,0.5);
+  transition:opacity 0.5s, left 0s 0.5s, right 0s 0.5s;
+}
+/* This has to be here in addition to being above so that the donations box drops into the correct position otherwise its too high */
+#mainMenu .donations span {
+  position:absolute;
+  top:1.65em; /* was 2.5em - the bigger value causes a space between the menu bar and the box */
+  width:10em;
+  padding: 0.3em; /* 0.5em - space around the item inside the green box */
+  background:#060;
+  color:#FFF;
+  text-shadow:none;
+  opacity:0;
+  box-shadow:0 0.25em 0.25em rgba(0,0,0,0.5);
+  transition:opacity 0.5s, left 0s 0.5s, right 0s 0.5s;
+}
+
+#mainMenu .rabbit a:focus span,
+#mainMenu .rabbit a:hover span,
+#mainMenu .donations a:focus span,
+#mainMenu .donations a:hover span {
+  opacity:1;
+  transition:opacity 0.5s;
+}
+
+#mainMenu .rabbit span {
+  left:-999em;
+}
+
+#mainMenu .donations span {
+  right:999em;
+}
+/* L/R position of the green rabbit box */
+#mainMenu .rabbit a:focus span,
+#mainMenu .rabbit a:hover span {
+  left:-10px; /* was 0 */
+}
+/* L/R position of the green dropdown box */
+#mainMenu .donations a:focus span,
+#mainMenu .donations a:hover span {
+  right:-1px; /* was 0 */
+}
+
+
+#mainMenu .rabbit a:before,
+#mainMenu .donations a:before {
+  font-size:1.3em; /* was 1.5em */
+  line-height:1em;
+  vertical-align:bottom;
+}
+
+.rabbit { /* Changed to padding due to this article - https://stackoverflow.com/questions/4743127/chrome-safari-display-border-around-image */
+   /* width: 2px; /* was 13px
+    height: 25px; */
+    padding: 8px 1px; /* Makes the clickable area in the center of the rabbit instead of at the top of it */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAZCAYAAADqrKTxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAB00lEQVR42mL8//8/A6kAIICYGMgAAAFEliaAAGJB5mRmZnI4OzvHnj9/ftGnT584njx58mn9+vUY7gcIIBSbjI2NjfT09CxFRESUvb29U2xsbLDaBBBAjMgBcfz48Ym/f//+8ufPH65///5ddXFxmYNNE0AAwW1qa2tjkpWVBRnNC7TN+fnz5xtx+QkggBhANoHwkSNHEr99+/b57du3z1avXl0AE8eGAQKIISgoiPXFixez/0MB0PNXQBJ79uwR3bVrl/OxY8ecgWwpZE0AAcSwcuXKov9I4OvXr29v3ry5+OfPn09gYj9+/Hh97969vi1btgiDNAEEEANQ0ZP/RIJXr14dS09PFwEIIIZbt27NBPL/Eqtx9+7dnQABBHbjgQMHnL5///6KGE0fP368BhBAcM8B42gyMZr+/v37AiCA4PEETC41wFC8TCjdAb1zEiCA4GmPk5PzOyMjI+vLly8PAoO9n42NzUBKSspPWFjYCKYGGOEn58+fXwgQQHDnATkGjx49Wtrd3S0K4nd1dQm8efPmEDDon3748OEsMMgXlZaWSoPkAAKIkZxMCBBAZOUngAAiSxNAAJGlCSCAyNIEEEBkaQIIILI0AQQQWZoAAgwASRir0WQ6jjsAAAAASUVORK5CYII=);
+    *background-image: url(template/images/wr2.png); /* fallbackl to IE7 - has no impact on other browsers */
+    margin-top: 0.05em;
+    margin-left: 0.5em;
+    margin-right: 0.4em ;
+}
+
+#mainMenu .donations a:before {
+  content:"$";
+  font-weight:bold;
+  color:#FC0;
+    padding: 0em 0.3em 0em 0em; /* added */
+}
+
+.forumlink {
+    font-weight: 600;
+}
+/* left menu */
+.wrapper{
+  margin: -10px 0px -10px -10px; /*Added -15px 20px -7px -15px;*/  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex: 1;
+  background: #000;
+}
+.columns{
+  display: flex;
+  flex:1;
+}
+.main{
+  flex: 1;
+  order: 2;
+  background: #FFDD88;
+  padding:0.25em 0em 0em 1em;
+}
+.sidebar-first {
+  margin: -15px -10px -7px -15px;
+  /* spacing between the colored box and the container sides*/
+  padding:20px 11px 20px 16px;
+  width: 22%;
+  order: 1;
+}
+#left-menu-1st-line {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  /*text-align:justify;*/
+  background-color: #000;
+  color: #00ff18;
+  display: block;
+  /* spacing between the text and the container */
+  padding: 10px 10px 5px 10px;
+  text-decoration: none;
+  font-family:courier, arial, helvetica, sans-serif;
+}
+
+.vertical-menu a:hover {
+  background-color: #FD8;
+  color: #000;
+}
+
+/*
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+/* End left menu */
+
+main {
+  display:block; /* IE fix */
+  padding:0.63em 0.63em; /* 1em 1em 0.5em - padding between the image/text and the edge of the content box */
+  background:#FD8;
+    border-top:1px solid #0C810F;   /* Added this. Will change width to 2 in media queries for mobiles so that it can be seen in vertical view */
+    border-bottom:1px solid #0C810F;   /* Added this*/
+}
+
+main h2 {
+  text-align:center;
+  font-size:1.4em; /* was 2em */
+  line-height:1.5em;
+  padding-bottom:0em; /* 0.25em; */
+}
+
+main h2 br {
+  display:none;
+}
+
+main h2 { /* did have em in here */
+  color:#000; /* #F00; */
+}
+
+main h3 {
+    padding:0em 0em 0.5em;
+    
+}
+
+em {
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+main p {
+    text-indent: 1.5em;
+  padding-bottom:1em;
+}
+
+video {
+    display:block;
+    margin: auto;
+    width: 95%;
+}
+
+#top > footer {
+  padding:0em; /* 1em */
+  text-align:center;
+  font-size:0.6em;
+}
+
+#top > footer p {
+  padding-top:0em;
+}
+
+#top > footer cite {
+  display:inline-block;
+}
+
+.modalFix {
+  position:fixed;
+  overflow:auto;
+  width:100%;
+  height:100%;
+}
+
+.toggle {
+  display:block; /* IE requires these not be hidden work */
+  position:absolute; /* so hide them off screen instead */
+  left:-999em;
+}
+
+.modal,
+.modal > a {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.modal {
+  position:fixed;
+  left:-100vw;
+  overflow:auto;
+  background:rgba(64,32,0,0.8);
+  box-shadow:inset 0 0 128px 128px rgba(0,0,0,0.5);
+  color:#F80;
+  opacity:0;
+  transition:opacity 0.5s, left 0s 0.5s;
+}
+
+.modal > div {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:100%;
+  padding:1em;
+}
+
+.modal section {
+  position:relative;
+  top:-50vh;
+  overflow:hidden;
+  width:100%;
+  max-width:40em;
+  background:#000;
+  border:1px solid #F80;
+  border-radius:0.5em;
+  transition:top 0.5s;
+}
+
+.modal section > a:first-child:before {
+  content:"X"; /* was \1F5D9 - cancellation symbol for the closing X*/
+  position:absolute;
+  font-size:1.5em;
+  line-height:1em;
+  top:0.1em;
+  right:0.15em;
+  color:#FFF;
+}
+
+
+.modal section h2 {
+  display:block;
+  padding:0.25em 0.5em;
+  font-size:1em;
+  font-weight:bold;
+  background:#F80;
+  color:#000;
+}
+
+.modal:target {
+  left:0;
+  opacity:1;
+  transition:opacity 0.5s, left 0s;
+}
+
+.modal:target section {
+  top:0;
+}
+
+#contact fieldset {
+  padding:1em 1em 0;
+}
+
+#contact input,
+#contact textarea {
+  width:100%;
+  padding:0.25em 0.5em;
+  margin-bottom:0.5em;
+  color:#FED;
+  background:#420;
+  border:1px solid #840;
+  border-radius:0.25em;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline:none;
+  box-shadow:0 0 0.5em 0.125em #C60;
+}
+
+#contact input:valid,
+#contact textarea:valid {
+  border-color:#630;
+}
+
+#contact input:invalid,
+#contact textarea:invalid {
+  border-color:#F40;
+}
+
+#contact button {
+  padding:0.5em 1em;
+  background:#F80;
+  color:#000;
+  border:none;
+  border-radius:0.25em;
+  transition:background 0.3s, text-shadow 0.3s;
+}
+
+#contact button:focus,
+#contact button:hover {
+  background:#F92;
+  text-shadow:0 0 0.5em #FC8;
+}
+
+#contact .submitsAndHiddens {
+  padding:0.5em 1em 1em;
+  text-align:right;
+}
+
+@media (max-width:64em) {
+  #top {
+    padding:0;
+  }
+  h1 {
+    font-size:4.6875vw;
+    border:0;
+  }
+  #mainMenu,
+  #top > footer {
+    border-width:1px 0;
+  }
+}
+
+@media (max-width:60em) {
+  #mainMenu,
+  #mainMenu > label {
+    position:absolute;
+    overflow:auto;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  #toggle_mainMenu + label {
+    position:absolute;
+    top:1em;
+    right:1em;
+    padding:0.25em;
+    border:0.2em solid #FFF;
+    border-radius:0.5em;
+  }
+  #toggle_mainMenu + label:before,
+  #toggle_mainMenu + label:after {
+    content:"";
+    display:block;
+    width:1.25em;
+    height:0.25em;
+    border:solid #FFF;
+    border-width:0.2em 0;
+  }
+  #toggle_mainMenu + label:after {
+    border-top:0;
+  }
+  #mainMenu {
+    position:fixed;
+    left:-100vw;
+    background:rgba(64,32,0,0.8);
+    box-shadow:inset 0 0 128px 128px rgba(0,0,0,0.5);
+    opacity:0;
+    transition:opacity 0.5s, left 0s 0.5s;
+  }
+  #mainMenu div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:100%;
+    padding:1em;
+  }
+  #mainMenu nav {
+    position:relative;
+    top:-50vh;
+    overflow:hidden;
+    max-width:24em;
+    background:#000;
+    border:1px solid #F80;
+    border-radius:0.5em;
+    transition:top 0.5s;
+  }
+  #mainMenu nav:before {
+    content:"Main Menu";
+    display:block;
+    padding:0.25em 0.5em;
+    font-weight:bold;
+    background:#F80;
+  }
+  #mainMenu nav > label:first-child:before {
+    content:"X"; /* Cancellation X via UTF-8 encoding */
+    position:absolute;
+    font-size:1.5em;
+    line-height:1em;
+    top:0.1em;
+    right:0.15em;
+  }
+  #mainMenu ul {
+    flex-wrap:wrap;
+    padding:0 0.25em 0.25em 0;
+  }
+  #mainMenu li {
+    width:50%;
+    padding:0.25em 0 0 0.25em;
+  }
+  #mainMenu .rabbit {
+    order:1;
+  }
+  #mainMenu .rabbit span,
+  #mainMenu .donations span {
+    position:static;
+    width:auto;
+    padding:0;
+    background:transparent;
+    color:inherit;
+    box-shadow:none;
+    opacity:1;
+  }
+  #mainMenu a {
+    padding:0.5em;
+    background:#420;
+    color:#FC0; 
+  }
+  #mainMenu a:focus,
+  #mainMenu a:hover {
+    background:#630;
+  }
+  #mainMenu .rabbit a:before,
+  #mainMenu .donations a:before {
+    display:none;
+  }
+  #toggle_mainMenu:checked ~ #mainMenu {
+    left:0;
+    opacity:1;
+    transition:opacity 0.5s, left 0s;
+  }
+  #toggle_mainMenu:checked ~ #mainMenu nav {
+    top:0;
+  }
+  #top > footer cite {
+    display:inline;
+  }
+}
+
+@media (max-width:40em) {
+  main {
+    padding:1em 0.5em 0.5em;
+  }
+}
+
+@media (max-width:26em) {
+  #mainMenu li {
+    width:100%;
+  }
+}

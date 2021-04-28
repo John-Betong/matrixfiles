@@ -5,5 +5,10 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.*)$ index.php/$1 [L]
 
-ErrorDocument 404 should-render-error-page
+# ErrorDocument 404 should-render-error-page
+# ErrorDocument 404 404.html
 
+# ErrorDocument 404 /404.html
+# ErrorDocument 404 "Missing file??? - Please try again"
+
+ErrorDocument 404 ./404.html
